@@ -1,0 +1,69 @@
+/**
+Spacing Utilities
+ */
+
+@each $percentage in (100, 75, 50, 25) {
+  @each $direction in (right, left, top, bottom) {
+    .m#{str-slice($direction, 0, 1)}-#{$percentage} {
+      margin-#{$direction}: percentage($percentage / 100) !important;
+    }
+    .p#{str-slice($direction, 0, 1)}-#{$percentage} {
+      padding-#{$direction}: percentage($percentage / 100) !important;
+    }
+  }
+  .mx-#{$percentage} {
+    margin-right: percentage($percentage / 100) !important;
+    margin-left: percentage($percentage / 100) !important;
+  }
+  .my-#{$percentage} {
+    margin-top: percentage($percentage / 100) !important;
+    margin-bottom: percentage($percentage / 100) !important;
+  }
+  .px-#{$percentage} {
+    padding-right: percentage($percentage / 100) !important;
+    padding-left: percentage($percentage / 100) !important;
+  }
+  .py-#{$percentage} {
+    padding-top: percentage($percentage / 100) !important;
+    padding-bottom: percentage($percentage / 100) !important;
+  }
+  .m-#{$percentage} {
+    margin: percentage($percentage / 100) !important;
+  }
+  .p-#{$percentage} {
+    padding: percentage($percentage / 100) !important;
+  }
+}
+
+@each $step in (1, 2, 3, 4) {
+  @each $direction in (right, left, top, bottom) {
+    .m#{str-slice($direction, 0, 1)}-#{$step} {
+      margin-#{$direction}: #{$step * 0.5}rem !important;
+    }
+    .p#{str-slice($direction, 0, 1)}-#{$step} {
+      padding-#{$direction}: #{$step * 0.5}rem !important;
+    }
+  }
+  .mx-#{$step} {
+    margin-right: #{$step * 0.5}rem !important;
+    margin-left: #{$step * 0.5}rem !important;
+  }
+  .my-#{$step} {
+    margin-top: #{$step * 0.5}rem !important;
+    margin-bottom: #{$step * 0.5}rem !important;
+  }
+  .px-#{$step} {
+    padding-right: #{$step * 0.5}rem !important;
+    padding-left: #{$step * 0.5}rem !important;
+  }
+  .py-#{$step} {
+    padding-top: #{$step * 0.5}rem !important;
+    padding-bottom: #{$step * 0.5}rem !important;
+  }
+  .m-#{$step} {
+    margin: #{$step * 0.5}rem !important;;
+  }
+  .p-#{$step} {
+    padding: #{$step * 0.5}rem !important;;
+  }
+}

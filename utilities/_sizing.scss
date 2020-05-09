@@ -1,0 +1,12 @@
+/**
+Sizing Utilities
+ */
+
+@each $percentage in (100, 75, 50, 25) {
+  .h-#{$percentage} {
+    height: percentage($percentage / 100) !important;
+  }
+  .w-#{$percentage} {
+    width: percentage($percentage / 100) !important;
+  }
+}

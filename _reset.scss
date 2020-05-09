@@ -1,0 +1,25 @@
+/**
+Reset Styles applied by browser defaults
+ */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+// Reset bootstrap styles
+ul {
+  height: auto !important;
+}
+
+input {
+  font-size: inherit;
+}

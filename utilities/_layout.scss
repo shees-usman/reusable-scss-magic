@@ -1,0 +1,28 @@
+/**
+Layout Utilities
+ */
+
+// Flexbox Layout
+@each $display in (block, inline-block, flex, none) {
+  .d-#{$display} {
+    display: $display !important;
+  }
+}
+
+@each $direction in (row, column) {
+  .flex-#{$direction} {
+    flex-direction: $direction !important;
+  }
+}
+
+@each $percentage in (100, 75, 50, 25) {
+  .flex-basis-#{$percentage} {
+    flex-basis: percentage($percentage / 100) !important;
+  }
+}
+
+@each $wrapVariant in (nowrap, wrap, wrap-reverse) {
+  .flex-#{$wrapVariant} {
+    flex-wrap: $wrapVariant;
+  }
+}

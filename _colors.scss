@@ -1,0 +1,14 @@
+/**
+Theme colors
+ */
+/* Base Color */
+$primary-base: #282c34;
+
+$primary-palette: (
+  /* Primary Color Palette*/
+'0': $primary-base,
+'1': lighten(desaturate(adjust-hue($primary-base, -4), 36.18), 31.96),
+'2': lighten(desaturate(adjust-hue($primary-base, -1), 33.48), 15.10),
+'3': lighten(desaturate(adjust-hue($primary-base, 18), 57.16), 5.49),
+'4': lighten(desaturate(adjust-hue($primary-base, 33), 41.50), 7.84)
+);

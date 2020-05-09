@@ -1,0 +1,21 @@
+@import '../colors';
+
+/*
+Coloring Utilities
+ */
+
+@each $color-key, $color-value in $primary-palette {
+  .color-primary-#{$color-key} {
+    color: $color-value;
+  }
+  .color-bg-primary-#{$color-key} {
+    background: $color-value;
+  }
+}
+
+@each $color in (white) {
+  .color-#{$color} {
+    color: $color;
+  }
+}
+
